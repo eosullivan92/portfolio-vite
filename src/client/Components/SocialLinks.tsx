@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconContext } from 'react-icons'
 import { SiLinkedin, SiGithub } from 'react-icons/si'
 import { HiOutlineDocumentDownload, HiCode } from 'react-icons/hi'

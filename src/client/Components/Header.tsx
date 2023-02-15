@@ -1,4 +1,3 @@
-import React from 'react'
 import { useIsSmall } from '../Hooks/useMediaQuery'
 import { SlMenu } from 'react-icons/sl'
 import { TfiClose } from 'react-icons/tfi'

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { SlMenu } from 'react-icons/sl'
 import { SiLinkedin, SiGithub } from 'react-icons/si'

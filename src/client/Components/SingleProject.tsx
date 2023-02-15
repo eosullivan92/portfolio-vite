@@ -1,7 +1,6 @@
-import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { IconContext } from 'react-icons'
-import { projectData } from '../projectData'
+import { projectData } from '../../projectData'
 import { RxArrowRight } from 'react-icons/rx'
 import StackIconTag from './StackIconTag'
 

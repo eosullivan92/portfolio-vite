@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './Components/Header'
-import AboutMe from './Components/AboutMe'
+import AboutMe from './Components/Hero'
 import Projects from './Components/ProjectsGrid'
 import Contact from './Components/Contact'
 import Sidebar from './Components/Sidebar'

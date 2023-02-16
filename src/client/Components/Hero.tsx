@@ -4,19 +4,19 @@ import SocialLinks from './SocialLinks'
 export default function AboutMe() {
 	return (
 		<>
-			<section className="hero-container" id="home">
-				<div className="hero-content">
-					<h1 className="title">Eamonn O&apos;Sullivan</h1>
-					<h3 className="subtitle">Web Developer</h3>
+			<section className="hero" id="home">
+				<div className="hero__content">
+					<h1 className="hero__title">Eamonn O&apos;Sullivan</h1>
+					<h3 className="hero__subtitle">Web Developer</h3>
 
-					<div className="about">
-						<p>
+					<div className="hero__about">
+						<p className="hero__about_p">
 							Welcome to my website. This is a space for me to
 							shamelessly show off my skills and the projects that
 							have been keeping me busy.{' '}
 						</p>
 
-						<p>
+						<p className="hero__about_p">
 							I&apos;m a Kiwi professional with 5 years of
 							Business Development experience in the Travel &
 							Tourism industry. I began my Web Development journey
@@ -28,7 +28,7 @@ export default function AboutMe() {
 							belt, and ready to help you with your next website
 							or application.
 						</p>
-						<p>
+						<p className="hero__about_p">
 							Currently open to new opportunities so feel free to
 							download my CV or contact me via the form below.
 						</p>

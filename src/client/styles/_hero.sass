@@ -1,0 +1,109 @@
+@use 'colors'
+@use 'layout'
+@use 'typography'
+
+.hero
+    min-height: 70vh
+    width: 100%
+
+    
+    .hero__content 
+        height: 100%
+        width: 70%
+        @include layout.flex-column-start()
+
+        .hero__title 
+            font: 100% typography.$font-hero
+            color: colors.$accent-blue
+            font-weight: 700
+            font-size: 48px
+            letter-spacing: 2px
+        
+        .hero__subtitle 
+            color: colors.$primary-dark
+
+        .hero__about 
+            width: 85%
+            padding: 1em 0
+            line-height: 1.8
+            color: colors.$primary-dark
+
+            .hero__about_p
+                padding-top: 1em
+        
+        .hero__social
+            width: 100%
+            padding: 2em 0em
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-start
+            gap: 2em
+            
+            .hero__social-item
+                display: flex
+                gap: 10px
+
+    .hero__image--flex
+        height: 100%
+        width: 30%
+        padding-right: 2em
+        @include layout.flex-column-center()
+        
+        .hero__image
+            width: 300px
+            height: 300px
+            border-radius: 50%
+            object-fit: cover
+            
+
+// @media (max-width: 1000px) 
+//     .hero-container 
+//         width: 100%
+//         display: flex
+//         flex-direction: column
+//         padding: layout.$header-p 1em 3em 1em
+
+//         .hero-content 
+//             width: 100%
+//             @include layout.flex-column-center()
+//             order: 2
+//             text-align: center
+
+//             .social-container
+//                 justify-content: center
+
+//         .hero-image 
+//             padding-top: 5em
+//             padding-bottom: 2em
+//             padding-right: 0
+//             width: 100%
+//             order: 1
+//             @include layout.flex-column-center()
+        
+//             img 
+//                 width: 250px
+//                 height: 250px
+//                 border-radius: 50%
+//                 object-fit: cover
+
+        
+                
+
+// @media (max-width: 650px) 
+//     .hero-container 
+//         height: auto
+//         width: 100%
+//         display: flex
+//         flex-direction: column
+//         padding: layout.$header-p 0em 3em 0em
+
+//         .hero-content 
+//             width: 100%
+//             @include layout.flex-column-center()
+//             order: 2
+//             text-align: center
+
+//             .social-container
+//                 flex-direction: column
+//                 align-items: center
+

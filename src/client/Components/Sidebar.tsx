@@ -18,18 +18,23 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 	}
 
 	return (
-		<div className={open ? 'sidebar sidebar-open' : 'sidebar'}>
+		<div className={open ? 'sidebar sidebar--open' : 'sidebar'}>
 			<IconContext.Provider
 				value={{ style: { fontSize: '1.7rem' }, color: '#072ac8' }}
 			>
-				<button onClick={() => handleSidebar()}>
+				<button
+					className="sidebar__btn"
+					onClick={() => handleSidebar()}
+				>
 					{open ? <TfiClose /> : <SlMenu />}
 				</button>
 
-				<ul className="navigation">
+				<ul className="sidebar__navigation">
 					<li
 						className={
-							open ? 'nav-link nav-link-visible' : 'nav-link'
+							open
+								? 'sidebar__nav-link sidebar__nav-link--visible'
+								: 'sidebar__nav-link'
 						}
 					>
 						<Link to="/" onClick={() => handleClose()}>
@@ -39,7 +44,9 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 
 					<li
 						className={
-							open ? 'nav-link nav-link-visible' : 'nav-link'
+							open
+								? 'sidebar__nav-link sidebar__nav-link--visible'
+								: 'sidebar__nav-link'
 						}
 					>
 						<Link to="/" onClick={() => handleClose()}>
@@ -48,7 +55,9 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 					</li>
 					<li
 						className={
-							open ? 'nav-link nav-link-visible' : 'nav-link'
+							open
+								? 'sidebar__nav-link sidebar__nav-link--visible'
+								: 'sidebar__nav-link'
 						}
 					>
 						<Link to="/contact" onClick={() => handleClose()}>
@@ -57,7 +66,7 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 					</li>
 				</ul>
 
-				<div className="social-icons">
+				<div className="sidebar__social-icons">
 					<a
 						href="https://www.linkedin.com/in/eosullivan9/"
 						target="_blank"

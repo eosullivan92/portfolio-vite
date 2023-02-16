@@ -1,0 +1,55 @@
+@use 'colors'
+@use 'layout'
+
+
+.sidebar
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    width: layout.$sidebar
+    padding-left: 2em
+    padding-top: 2em
+    border-right: 1px solid colors.$accent-blue
+    background: colors.$bg-cornsilk
+    transition: width 0.4s ease-in-out
+    z-index: 10
+
+    &--open 
+        width: layout.$sidebar-open
+
+
+    .sidebar__btn
+        width: 30px
+
+    .sidebar__navigation
+
+            .sidebar__nav-link
+                margin-bottom: 3em
+                transform: translateX(-150%)
+                font-size: 1.1rem
+                transition: transform 0.4s ease-in-out
+
+                &:hover
+                    transform: translateX(20px)
+                    transition: transform 0.1s ease-in-out
+                
+                &--visible
+                    transform: translateX(0%)
+
+    
+    .sidebar__social-icons
+        display: flex
+        flex-direction: column
+        gap: 1.5em
+        padding-bottom: 3em
+
+
+
+
+// @media (max-width: 600px) 
+//     .sidebar 
+//         visibility: hidden
+    
+//     .sidebar-open 
+//         visibility: visible

@@ -5,7 +5,7 @@ import { HiOutlineDocumentDownload, HiCode } from 'react-icons/hi'
 export default function SocialLinks() {
 	return (
 		<>
-			<div className="social-container">
+			<div className="hero__social">
 				<IconContext.Provider
 					value={{ style: { fontSize: '1.5rem' }, color: '#072ac8' }}
 				>
@@ -14,9 +14,9 @@ export default function SocialLinks() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<div className="social-item">
+						<div className="hero__social-item">
 							<SiLinkedin />
-							<p className="url">linkedin/eosullivan9</p>
+							<p>linkedin/eosullivan9</p>
 						</div>
 					</a>
 
@@ -25,18 +25,18 @@ export default function SocialLinks() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<div className="social-item">
+						<div className="hero__social-item">
 							<SiGithub />
-							<p className="url">github/esosullivan92</p>
+							<p>github/esosullivan92</p>
 						</div>
 					</a>
 					<a
 						href="/EamonnOsullivan-CV.pdf"
 						download="Eamonn O'Sullivan CV"
 					>
-						<div className="social-item">
+						<div className="hero__social-item">
 							<HiOutlineDocumentDownload />
-							<p className="url">Download CV</p>
+							<p>Download CV</p>
 						</div>
 					</a>
 					<a
@@ -44,10 +44,10 @@ export default function SocialLinks() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<div className="social-item">
+						<div className="hero__social-item">
 							<HiCode />
 
-							<p className="url">Source Code</p>
+							<p>Source Code</p>
 						</div>
 					</a>
 				</IconContext.Provider>

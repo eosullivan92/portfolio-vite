@@ -31,7 +31,7 @@ export default function SocialLinks() {
 						</div>
 					</a>
 					<a
-						href="/EamonnOsullivan-CV.pdf"
+						href="/EamonnOSullivanCV.pdf"
 						download="Eamonn O'Sullivan CV"
 					>
 						<div className="hero__social-item">

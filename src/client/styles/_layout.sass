@@ -1,6 +1,9 @@
 $sidebar: 90px
 $sidebar-open: 300px
 $header-p: 130px
+$padding-big: 130px 3em 3em 3em
+$padding-med: 130px 1em 3em 1em
+$padding-sml: 130px 0em 3em 0em
     
 @mixin flex-column-center()
     display: flex
@@ -36,15 +39,41 @@ $header-p: 130px
     align-items: flex-start
 
 .hero
-    padding: $header-p 3em 3em 3em
+    padding: $padding-big
     display: flex
     flex-direction: row
     align-items: center
 
 .single-project
-    padding: 3em
-    padding-top: $header-p
-
+    padding: $padding-big
 
 .contact
-    padding: $header-p 3em 3em 3em
+    padding: $padding-big
+
+@media (max-width: 1000px)
+    .hero
+        flex-direction: column
+        padding: $padding-med
+    
+    .single-project
+        padding: $padding-med
+
+    .contact
+        padding: $padding-med
+
+
+@media (max-width: 650px) 
+    .content
+        margin-left: 0
+
+    .content--pushed
+        margin-left: 0
+
+    .hero
+        padding: $padding-med
+    
+    .single-project
+        padding: $padding-med
+
+    .contact
+        padding: $padding-med

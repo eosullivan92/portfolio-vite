@@ -5,7 +5,6 @@
 .hero
     min-height: 70vh
     width: 100%
-
     
     .hero__content 
         height: 100%
@@ -56,54 +55,42 @@
             object-fit: cover
             
 
-// @media (max-width: 1000px) 
-//     .hero-container 
-//         width: 100%
-//         display: flex
-//         flex-direction: column
-//         padding: layout.$header-p 1em 3em 1em
+@media (max-width: 1000px) 
+    .hero 
 
-//         .hero-content 
-//             width: 100%
-//             @include layout.flex-column-center()
-//             order: 2
-//             text-align: center
+        .hero__content 
+            width: 100%
+            @include layout.flex-column-center()
+            order: 2
+            text-align: center
 
-//             .social-container
-//                 justify-content: center
+            .hero__social
+                justify-content: center
 
-//         .hero-image 
-//             padding-top: 5em
-//             padding-bottom: 2em
-//             padding-right: 0
-//             width: 100%
-//             order: 1
-//             @include layout.flex-column-center()
+        .hero__image--flex 
+            padding-top: 5em
+            padding-bottom: 2em
+            padding-right: 0
+            width: 100%
+            order: 1
+            @include layout.flex-column-center()
         
-//             img 
-//                 width: 250px
-//                 height: 250px
-//                 border-radius: 50%
-//                 object-fit: cover
+            .hero__image 
+                width: 250px
+                height: 250px
+                border-radius: 50%
+                object-fit: cover
 
         
                 
 
-// @media (max-width: 650px) 
-//     .hero-container 
-//         height: auto
-//         width: 100%
-//         display: flex
-//         flex-direction: column
-//         padding: layout.$header-p 0em 3em 0em
+@media (max-width: 650px) 
+    .hero
+        height: auto
 
-//         .hero-content 
-//             width: 100%
-//             @include layout.flex-column-center()
-//             order: 2
-//             text-align: center
+        .hero__content 
 
-//             .social-container
-//                 flex-direction: column
-//                 align-items: center
+            .hero__social
+                flex-direction: column
+                align-items: center
 

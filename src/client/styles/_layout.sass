@@ -1,0 +1,34 @@
+$sidebar: 90px
+$sidebar-open: 300px
+$header-p: 130px
+    
+@mixin flex-column-center()
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+@mixin flex-column-start()
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.content
+    transition: margin-left 0.4s ease-in-out
+    margin-top: 0
+    margin-left: $sidebar
+    padding-bottom: 3em
+    scroll-behavior: smooth
+
+.content--pushed
+    margin-left: $sidebar-open
+    transition: margin-left 0.4s ease-in-out
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.contact
+    padding: $header-p 3em 3em 3em

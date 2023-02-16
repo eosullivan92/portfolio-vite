@@ -11,9 +11,9 @@ type SidebarProps = {
 export default function Header({ open, handleSidebar }: SidebarProps) {
 	const isSmall = useIsSmall()
 	return (
-		<header className="horizontal-header">
+		<header className="header">
 			{isSmall && !open && (
-				<button onClick={() => handleSidebar()}>
+				<button className="header__btn" onClick={() => handleSidebar()}>
 					<IconContext.Provider
 						value={{
 							style: { fontSize: '1.7rem' },
@@ -24,15 +24,15 @@ export default function Header({ open, handleSidebar }: SidebarProps) {
 					</IconContext.Provider>
 				</button>
 			)}
-			<div className="title-container">
+			<div className="header__title">
 				<a href="/#home">
-					<h2 className="logo-title">EO</h2>
+					<h2 className="header__logo">EO</h2>
 				</a>
-				<p className="name-title">Eamonn O&apos;Sullivan</p>
+				<p className="header__name">Eamonn O&apos;Sullivan</p>
 			</div>
 			{!isSmall && (
 				<a href="/contact">
-					<div className="block-text">CONTACT</div>
+					<div className="header__contact">CONTACT</div>
 				</a>
 			)}
 		</header>

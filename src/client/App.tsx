@@ -17,7 +17,7 @@ function App() {
 	return (
 		<div className={`container`}>
 			<Sidebar open={open} handleSidebar={handleSidebar} />
-			<div className={open ? 'content content-pushed' : 'content'}>
+			<div className={open ? 'content content--pushed' : 'content'}>
 				<Header open={open} handleSidebar={handleSidebar} />
 				<Routes>
 					<Route

@@ -1,0 +1,102 @@
+.content {
+  transition: margin-left 0.4s ease-in-out;
+  margin-top: 0;
+  margin-left: 90px;
+  padding-bottom: 3em;
+  scroll-behavior: smooth;
+}
+
+.content--pushed {
+  margin-left: 300px;
+  transition: margin-left 0.4s ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  padding: 130px 3em 3em 3em;
+}
+
+@font-face {
+  font-family: "Powerr";
+  src: url("./typography/PowerrExtraBold.ttf");
+}
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./typography/source-sans-pro-v21-latin-regular.woff2") format("woff2"), url("./typography/source-sans-pro-v21-latin-regular.woff") format("woff");
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./typography/source-sans-pro-v21-latin-700.woff2") format("woff2"), url("./typography/source-sans-pro-v21-latin-700.woff") format("woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdf8e1;
+  color: #072ac8;
+  font: 100% source-sans-pro-700, sans-serifs;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #072ac8;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  width: calc(100% - 100px);
+  height: 80px;
+  border-bottom: 1px solid #072ac8;
+  background: #fdf8e1;
+  padding-left: 2em;
+  position: fixed;
+  z-index: 9;
+}
+.header .header__btn {
+  background: none;
+  border: none;
+  outline: transparent;
+}
+.header .header__title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.header .header__title .header__title__logo {
+  font: 100% "Powerr", source-sans-pro-700, sans-serif;
+  color: #072ac8;
+  font-weight: 700;
+  font-size: 28px;
+}
+.header .header__contact {
+  height: 80px;
+  line-height: 80px;
+  width: 200px;
+  background-color: #072ac8;
+  color: #fdf8e1;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=output.css.map */

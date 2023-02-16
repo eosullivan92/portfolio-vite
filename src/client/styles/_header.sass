@@ -1,0 +1,48 @@
+@use 'colors'
+@use 'typography'
+    
+.header
+    width: calc(100% - 100px)
+    height: 80px
+    border-bottom: 1px solid colors.$accent-blue
+    background: colors.$bg-cornsilk
+    padding-left: 2em
+    position: fixed
+    z-index: 9
+
+    .header__btn
+        background: none
+        border: none
+        outline: transparent
+
+
+    .header__title
+        display: flex
+        align-items: center
+        gap: 1em
+
+        .header__logo 
+            font: 100% typography.$font-hero
+            color: colors.$accent-blue
+            font-weight: 700
+            font-size: 28px
+
+
+    .header__contact
+        height: 80px
+        line-height: 80px
+        width: 200px
+        background-color: colors.$accent-blue
+        color: colors.$bg-cornsilk
+        text-align: center
+        vertical-align: middle
+        font-weight: 700
+                
+// @media (max-width: 600px)
+
+//     .horizontal-header
+//         padding-right: 2em
+//         width: 100%
+
+//         .name-title
+//             display: none

@@ -9,6 +9,7 @@ export default defineConfig({
 	},
 	build: {
 		outDir: 'dist/app',
+		sourcemap: true,
 	},
 	publicDir: './src/server/public',
 })

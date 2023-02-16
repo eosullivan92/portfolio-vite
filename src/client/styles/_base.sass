@@ -1,0 +1,22 @@
+@use 'colors'
+@use 'layout'
+@use 'typography'
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+  @include colors.color-scheme(colors.$scheme-default ...)
+  font: 100% typography.$font-main
+  font-size: 14px
+
+
+
+a
+    text-decoration: none
+    color: colors.$accent-blue
+
+li
+    list-style: none

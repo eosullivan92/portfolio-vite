@@ -3,9 +3,9 @@ import { projectData } from '../../projectData'
 
 export default function Projects() {
 	return (
-		<section className="projects-container" id="portfolio">
-			<h2>A sample of my work...</h2>
-			<div className="projects-grid">
+		<section className="projects" id="portfolio">
+			<h2 className="projects__title">A sample of my work...</h2>
+			<div className="projects__grid">
 				{projectData.map((project, i) => (
 					<Project project={project} key={i} />
 				))}

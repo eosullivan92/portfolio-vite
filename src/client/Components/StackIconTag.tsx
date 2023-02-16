@@ -8,7 +8,7 @@ export default function StackIconTag({
 	Icon: ReactNode
 }) {
 	return (
-		<span className="stack-tag">
+		<span className="single-project__stack-tag">
 			{Icon}
 			{name}
 		</span>

@@ -1,0 +1,147 @@
+@use 'colors'
+@use 'typography'
+@use 'layout'
+
+.single-project
+    width: 100%
+
+    .single-project__header-flex
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding-right: 5em
+
+        .single-project__header
+
+            .single-project__title
+                font-size: 3rem
+                font-family: typography.$font-hero
+
+            .single-project__subtitle
+                font-size: 1.3rem
+                color: colors.$primary-dark
+            
+            .single-project__project-url
+                font-size: 1.2rem
+
+        .single-project__btn-next
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 5px
+            border: 1px solid colors.$accent-blue
+            background: none
+            outline: transparent
+            color: colors.$accent-blue
+            font-size: 1rem
+            width: 140px
+            height: 60px
+            padding: 10px 10px
+
+    .single-project__project-flex
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 3em
+        gap: 3em
+        width: 100%
+
+        .single-project__image-container
+            width: 100%
+        
+            .single-project__image
+                display: block
+                margin: 0 auto
+                width: 80%
+
+            .plantasia-img
+                max-width: 700px
+                object-fit: cover
+                object-position: top
+        
+        .single-project__stack
+            padding: 2em 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 1em
+
+            .single-project__stack-tag
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 5px
+                border: 1px solid colors.$accent-blue
+                width: 150px
+                padding: 10px 15px
+        
+        .single-project__info
+            width: 90%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            color: colors.$primary-dark
+            font-size: 1rem
+            line-height: 1.8
+            
+            .single-project__info-item
+                padding-top: 1em
+
+            .single-project__reflections-list
+
+                .single-project__reflection
+                    list-style: initial
+                    margin-left: 2em
+            
+            
+        
+
+
+// @media (max-width: 1650px)
+// .single-project-container
+
+
+
+
+//         .project-info
+//             order: 2
+//             width: 100%
+
+//             .stack-container
+//                 justify-content: center
+
+//         .project-image-container
+//             order: 1
+//             width: 100%
+
+//             .project-image
+//                 width: 70%
+
+// @media (max-width: 850px)
+//     .single-project-container
+
+//         .project-header-flex
+//             flex-direction: column
+//             gap: 2em
+
+//         .project-flex
+
+//             .project-image-container
+//                     order: 1
+//                     width: 100%
+
+//                     picture 
+
+//                         .project-image
+//                             width: 100%
+        
+
+// @media (max-width: 500px)
+
+//     .single-project-container
+//         padding: 1em
+//         padding-top: 130px
+        
+
+            

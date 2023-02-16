@@ -42,23 +42,26 @@ export default function Project({ project }: ProjectProps) {
 			onKeyDown={(e) => handleKeyDownNavigate(e, project.id)}
 			tabIndex={0}
 		>
-			<h3 className="project-name">{project.name}</h3>
-			<p className="project-subtitle">{project.subtitle}</p>
-			<a href={project.link} className="project-url">
+			<h3 className="project__title">{project.name}</h3>
+			<p className="project__subtitle">{project.subtitle}</p>
+			<a href={project.link} className="project__url">
 				{project.link}
 			</a>
-			<picture className="image-container">
-				<source
-					srcSet={project.screenshot}
-					media="(min-width: 600px)"
-				/>
-				<img
-					src={project.screenshotmobile || project.screenshot}
-					alt="project screenshot"
-					loading="lazy"
-					decoding="async"
-				/>
-			</picture>
+			<div className="project__image-container">
+				<picture>
+					<source
+						srcSet={project.screenshot}
+						media="(min-width: 600px)"
+					/>
+					<img
+						src={project.screenshotmobile || project.screenshot}
+						className="project__image"
+						alt="project screenshot"
+						loading="lazy"
+						decoding="async"
+					/>
+				</picture>
+			</div>
 		</div>
 	)
 }

@@ -6,6 +6,7 @@ import Projects from './Components/ProjectsGrid'
 import Contact from './Components/Contact'
 import Sidebar from './Components/Sidebar'
 import SingleProject from './Components/SingleProject'
+import ScrollToTop from './Hooks/useScrollToTop'
 
 function App() {
 	const [open, setOpen] = useState(false)
@@ -30,7 +31,15 @@ function App() {
 						}
 					/>
 					<Route path="/portfolio" element={<Projects />} />
-					<Route path="/portfolio/:id" element={<SingleProject />} />
+					<Route
+						path="/portfolio/:id"
+						element={
+							<>
+								<ScrollToTop />
+								<SingleProject />
+							</>
+						}
+					/>
 					<Route path="/about" element={<AboutMe />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route

@@ -404,4 +404,131 @@ button {
   margin-left: 2em;
 }
 
+.contact {
+  color: #515151;
+}
+.contact .contact__title {
+  padding: 0;
+  margin: 0;
+  color: #072ac8;
+}
+.contact .contact__container {
+  min-height: 50vh;
+  width: 100%;
+  padding-top: 2em;
+  display: flex;
+}
+.contact .contact__container .contact__content {
+  width: 50%;
+  padding-top: 4em;
+}
+.contact .contact__container .contact__content .contact__cta {
+  font-size: 22px;
+}
+.contact .contact__container .contact__content .contact__list {
+  padding: 0;
+  padding-top: 2em;
+}
+.contact .contact__container .contact__content .contact__list .contact__list-item {
+  padding-top: 1em;
+}
+.contact .contact__container .contact__content .contact__list .contact__list-item .contact__list-item__text {
+  position: relative;
+  padding-left: 1em;
+  bottom: 5px;
+}
+.contact .contact__container .contact__form-control {
+  width: 50%;
+  max-width: 650px;
+}
+.contact .contact__container .contact__form-control .contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__input-control {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__input-control .contact__input {
+  width: 100%;
+  height: 100%;
+  font: 100% "source-sans-pro-700", sans-serif;
+  font-size: 16px;
+  outline: transparent;
+  border: none;
+  border-radius: 3px;
+  padding: 0 10px;
+  background: hsla(49, 88%, 99%, 0.8);
+  color: #515151;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__input-control .contact__input:not(:placeholder-shown) + label,
+.contact .contact__container .contact__form-control .contact__form .contact__input-control .contact__input:focus + label,
+.contact .contact__container .contact__form-control .contact__form .contact__input-control .contact__input:valid + label {
+  font-size: 12px;
+  top: -13px;
+  background: #fdf8e1;
+  padding: 5px;
+  color: #072ac8;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__input-control .contact__input-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #515151;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control .contact__textarea {
+  font: 100% "source-sans-pro-700", sans-serif;
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 10px;
+  background: hsla(49, 88%, 99%, 0.8);
+  color: #515151;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control .contact__textarea:not(:placeholder-shown) + label,
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control .contact__textarea:focus + label,
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control .contact__textarea:valid + label {
+  font-size: 12px;
+  top: -25px;
+  background: #fdf8e1;
+  padding: 5px;
+  color: #072ac8;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__textarea-control .contact__textarea-label {
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  transform: translateY(-5%);
+  font-size: 16px;
+  color: #515151;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.contact .contact__container .contact__form-control .contact__form .contact__btn {
+  background: #072ac8;
+  color: #fdf8e1;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  padding: 15px 8px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=output.css.map */

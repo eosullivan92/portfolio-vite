@@ -1,0 +1,158 @@
+@use 'colors'
+@use 'typography'
+
+.contact
+    color: colors.$primary-dark
+
+    .contact__title
+        padding: 0
+        margin: 0
+        color: colors.$accent-blue
+
+    .contact__container
+        min-height: 50vh
+        width: 100%
+        padding-top: 2em
+        display: flex
+        
+        .contact__content
+            width: 50%
+            padding-top: 4em
+
+            .contact__cta
+                font-size: 22px
+                
+
+            .contact__list
+                padding: 0
+                padding-top: 2em
+
+                .contact__list-item
+                    padding-top: 1em
+
+                    .contact__list-item__text
+                        position: relative
+                        padding-left: 1em
+                        bottom: 5px
+
+            
+        .contact__form-control
+            width: 50%
+            max-width:650px
+
+            .contact__form
+                display: flex
+                flex-direction: column
+                justify-content: center
+
+                .contact__input-control
+                    position: relative
+                    width: 100%
+                    height: 50px
+                    margin-bottom: 30px
+
+
+                    .contact__input 
+                        width: 100%
+                        height: 100%
+                        font: 100% typography.$font-main
+                        font-size: 16px
+                        outline: transparent
+                        border: none
+                        border-radius: 3px
+                        padding: 0 10px
+                        background: colors.$bg-cornsilk-opaque
+                        color: colors.$primary-dark
+
+                    .contact__input:not(:placeholder-shown) + label,
+                    .contact__input:focus + label,
+                    .contact__input:valid + label 
+                        font-size: 12px
+                        top: -13px
+                        background: colors.$bg-cornsilk
+                        padding: 5px
+                        color: colors.$accent-blue
+
+                    .contact__input-label
+                        position: absolute
+                        top: 50%
+                        left: 10px
+                        transform: translateY(-50%)
+                        font-size: 16px
+                        color: colors.$primary-dark
+                        pointer-events: none
+                        transition: all .4s ease
+                
+                .contact__textarea-control
+                    position: relative
+                    width: 100%
+                    margin-bottom: 20px
+                        
+                    .contact__textarea
+                        font: 100% typography.$font-main
+                        width: 100%
+                        height: auto
+                        outline: none
+                        border: none
+                        border-radius: 3px
+                        padding: 10px 10px
+                        background: colors.$bg-cornsilk-opaque
+                        color: colors.$primary-dark
+
+                    
+                    
+                    .contact__textarea:not(:placeholder-shown) + label,
+                    .contact__textarea:focus + label,
+                    .contact__textarea:valid + label 
+                        font-size: 12px
+                        top: -25px
+                        background: colors.$bg-cornsilk
+                        padding: 5px
+                        color:  colors.$accent-blue
+
+                    .contact__textarea-label
+                        position: absolute
+                        top: 5%
+                        left: 10px
+                        transform: translateY(-5%)
+                        font-size: 16px
+                        color: colors.$primary-dark
+                        pointer-events: none
+                        transition: all .4s ease
+
+
+
+                .contact__btn
+                    background: colors.$accent-blue
+                    color: colors.$bg-cornsilk
+                    text-align: center
+                    letter-spacing: 1px
+                    font-size: 16px
+                    border: none
+                    border-radius: 3px
+                    display: block
+                    padding: 15px 8px
+                    cursor: pointer
+
+
+// @media (max-width: 1000px )
+//     .contact-section
+//         padding: layout.$header-p 1em 1em 1em
+            
+//         .contact-container
+//             height: auto
+//             width: 100%
+//             padding-top: 0em
+//             display: flex
+//             flex-direction: column
+//             padding-bottom: 5em
+
+//             .contact-form
+//                 width: 100%
+//                 order: 2
+
+
+//             .contact-content
+//                 width: 100%
+//                 order: 1
+//                 padding-bottom: 3em

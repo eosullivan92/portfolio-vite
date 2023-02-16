@@ -34,15 +34,15 @@ export default function Contact() {
 
 	return (
 		<section className="contact">
-			<h2 className="contact-title">Contact</h2>
+			<h2 className="contact__title">Contact</h2>
 
-			<div className="contact-container">
-				<div className="contact-content">
-					<p className="cta">
+			<div className="contact__container">
+				<div className="contact__content">
+					<p className="contact__cta">
 						Looking for a Web Developer? Lets get in touch.
 					</p>
-					<ul>
-						<li>
+					<ul className="contact__list">
+						<li className="contact__list-item">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
@@ -59,9 +59,11 @@ export default function Contact() {
 									d="M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
 								/>
 							</svg>{' '}
-							<span>eamonnsosullivan@gmail.com</span>
+							<span className="contact__list-item__text">
+								eamonnsosullivan@gmail.com
+							</span>
 						</li>
-						<li>
+						<li className="contact__list-item">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
@@ -78,9 +80,11 @@ export default function Contact() {
 									d="M22 10a1 1 0 0 1-2 0 6 6 0 0 0-6-6 1 1 0 0 1 0-2 8 8 0 0 1 8 8zm-4 0a1 1 0 0 1-2 0 2 2 0 0 0-2-2 1 1 0 0 1 0-2 4 4 0 0 1 4 4z"
 								/>
 							</svg>{' '}
-							<span>+64 02040580875</span>
+							<span className="contact__list-item__text">
+								+64 02040580875
+							</span>
 						</li>
-						<li>
+						<li className="contact__list-item">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
@@ -97,9 +101,11 @@ export default function Contact() {
 									d="M12.01 4.42l-8.3 8.3a1 1 0 1 1-1.42-1.41l9.02-9.02a1 1 0 0 1 1.41 0l8.99 9.02a1 1 0 0 1-1.42 1.41l-8.28-8.3z"
 								/>
 							</svg>{' '}
-							<span>Current location: Wellington, NZ</span>
+							<span className="contact__list-item__text">
+								Current location: Wellington, NZ
+							</span>
 						</li>
-						<li>
+						<li className="contact__list-item">
 							<svg
 								fill="#072ac8"
 								xmlns="http://www.w3.org/2000/svg"
@@ -114,13 +120,15 @@ export default function Contact() {
 								/>
 								<path d="M9 4h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H9v-6H5v6H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h1a2 2 0 1 1 4 0z" />
 							</svg>
-							<span>Open to work: Australia & NZ</span>
+							<span className="contact__list-item__text">
+								Open to work: Australia & NZ
+							</span>
 						</li>
 					</ul>
 				</div>
-				<div className="contact-form">
-					<form onSubmit={handleSubmit}>
-						<div className="input-control">
+				<div className="contact__form-control">
+					<form className="contact__form" onSubmit={handleSubmit}>
+						<div className="contact__input-control">
 							<input
 								type="text"
 								name="from_name"
@@ -128,11 +136,17 @@ export default function Contact() {
 								placeholder={' '}
 								value={toSend.from_name}
 								onChange={handleChange}
+								className="contact__input"
 								required
 							/>
-							<label htmlFor="from_name">Your Name</label>
+							<label
+								className="contact__input-label"
+								htmlFor="from_name"
+							>
+								Your Name
+							</label>
 						</div>
-						<div className="input-control">
+						<div className="contact__input-control">
 							<input
 								type="email"
 								name="from_email"
@@ -140,11 +154,17 @@ export default function Contact() {
 								placeholder={' '}
 								value={toSend.from_email}
 								onChange={handleChange}
+								className="contact__input"
 								required
 							/>
-							<label htmlFor="from_email">Email</label>
+							<label
+								className="contact__input-label"
+								htmlFor="from_email"
+							>
+								Email
+							</label>
 						</div>
-						<div className="text-control">
+						<div className="contact__textarea-control">
 							<textarea
 								rows={10}
 								cols={50}
@@ -152,11 +172,19 @@ export default function Contact() {
 								placeholder={' '}
 								value={toSend.message}
 								onChange={handleChange}
+								className="contact__textarea"
 								required
 							/>
-							<label htmlFor="from_message">Message</label>
+							<label
+								className="contact__textarea-label"
+								htmlFor="from_message"
+							>
+								Message
+							</label>
 						</div>
-						<button type="submit">Send</button>
+						<button className="contact__btn" type="submit">
+							Send
+						</button>
 					</form>
 				</div>
 			</div>

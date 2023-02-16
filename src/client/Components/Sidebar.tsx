@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import { SlMenu } from 'react-icons/sl'
 import { SiLinkedin, SiGithub } from 'react-icons/si'
 import { TfiClose } from 'react-icons/tfi'
@@ -37,9 +38,13 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 								: 'sidebar__nav-link'
 						}
 					>
-						<Link to="/" onClick={() => handleClose()}>
+						<HashLink
+							smooth
+							to="/#hero"
+							onClick={() => handleClose()}
+						>
 							Home
-						</Link>
+						</HashLink>
 					</li>
 
 					<li
@@ -49,9 +54,13 @@ export default function Sidebar({ open, handleSidebar }: SidebarProps) {
 								: 'sidebar__nav-link'
 						}
 					>
-						<Link to="/" onClick={() => handleClose()}>
+						<HashLink
+							smooth
+							to="/#portfolio"
+							onClick={() => handleClose()}
+						>
 							Portfolio
-						</Link>
+						</HashLink>
 					</li>
 					<li
 						className={
